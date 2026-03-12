@@ -1,0 +1,26 @@
+body{
+background-image:url(image.png);
+}
+#box{
+    height:300px;
+    width:300px;
+    background-color: white;
+    border-width:10px;
+    border-color:black;
+    position:absolute;
+    top:20%;
+    right:40%;
+    border-radius:10%;
+}
+#sbox{
+    border-radius: 5%;
+    font-size:13px;
+}
+#button{
+    height:41px;
+    width:200px;
+    margin-left:33px;
+    background-color:aquamarine;
+    border-color:white;
+    color:white;
+}
