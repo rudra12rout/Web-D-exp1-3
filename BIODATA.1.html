@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<style>
+
+/* Page background */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-2/cur116.cur"), auto;
+}
+
+/* Main biodata container */
+.container{
+    width: 60%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.92);
+    border-radius: 10px;
+}
+
+/* Main heading style */
+h1{
+    text-align: center;
+    font-family: Georgia, serif;
+    color: darkblue;
+    letter-spacing: 3px;
+}
+
+/* Section titles */
+.section{
+    font-size: 22px;
+    color: darkred;
+    border-bottom: 2px solid gray;
+    margin-top: 20px;
+}
+
+/* Paragraph styling */
+p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Profile section with background image */
+.profile{
+    height: 200px;
+    background-image: url("https://images.unsplash.com/photo-1544005313-94ddf0286df2");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Link styling */
+a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Link hover effect */
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/* Layered box 1 */
+.layer1{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 150px;
+    background: rgba(0,0,255,0.4);
+    z-index: 1;
+}
+
+/* Layered box 2 */
+.layer2{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255,0,0,0.4);
+    z-index: 2;
+}
+
+</style>
+<body>
+    <header style="text-align:center"><h1><b><u>BIODATA</u></b></h1>
+        <p>I am Rudra Rout</p>
+        <img src="image.jpg" height ="150x"width="150x"alt="Profile Photo"/>
+    </header>
+    <hr/>
+    <section><h2><b>ABOUT:</b></h2>
+    <ul>
+        <li>I come from The city of temple "Bhubaneswar"</li>
+        <li>I am an 18yr old college student</li>
+    </ul></section>
+    <hr/>
+    <section><h2><b>EDUCATION:</b></h2>
+    <ul>
+        <li><b>10th CBSE:</b>96.4%</li>
+        <li><b>12th CBSE:</b>94%</li>
+        <li><b>BTECH(NIT KKR):</b>Electronic Engineering</li>
+    </ul></section>
+    <hr/>
+    <section><h2><b>Hobbies & Achievements:</b></h2>
+    <ul>
+        <li>My hobbies include playing board games,Reading,sports</li>
+        <li><b>My achivements:</b>School Topper in Physics & JEE mains CRL:19005</li>
+    </ul></section>
+    <hr/>
+    <section><h3>Contact Me:</h3>
+    <ul>
+        <li>Gmail:rudraprayashrout@gmail.com</li>
+        <li>linkedin:<a href="https://www.linkedin.com/in/rudra-prayas-rout-63408730a/ "target=_main><img src ="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUKZsL///8AZME7eMgAWb7i6fUAXL/Az+oAYsFjj9B1m9QAYMBGgswAVr0AXb8AWr5ZjdBWh80ZbMTO3PCzx+drl9T2+f2Ssd7G1u0dbsXF1e3w9fs2dsfl7ffV4fIocsaApNmowOSMrNyrw+Wbt+AAUryFqNr2AL+0AAADz0lEQVR4nO3ca1+qMACAcZiA5ATMW+a98vT9P+LROkXiNruMLXae/2v1xyOy6QCjCAAAAAAAAAAAAAAAAAAAALBGnPjeiPbkZSJ36/W4qmSQlbIYTTfxyXx72CXBNYpkv4o/mAwDayx7m7hhWoWUWM2afUebcTiJ5UAReDweo1AS5VAZeNyLgXxQhZxrCo/Hou+NsyJ70AXGcS+EnSgifWC8SHxvngXyzlAYhzCeJqmp8FH63r4fE8IUGC+6P9YI3VTxatP9AzFXz/bvCt8b+GNyT2HX5aov3UEVip4xMO3+SBNlxsJp6Xv7fq5amApn3Z/xzQfivAzgW1tUrPSFDwF8SM1zfiDLisUk5KPwREjN5/QpgKnilbhXrmP0uz/bvxPR9jLwEFDgacm7+Ut/c5v53ijLSvHw4WhMB0Xue4usE2U1vOtv03Qy3e+S8PpeCJlVSZKVgcyCAIDfT+SyrI6Ok0+As4+QVbGbHabLxWTRf7qb7YrMa6XIdZpbpX3k2QPzSuyXjV8rk8dd4i1SjG90bs+3SQx1D7yvH5gnt0vlr830ufK06mNYMW2cl8nUm370/laIYmQ4W3covSwaGAob68FZ/1phudOuiLyYDwoPu9FeoSiejX0nE+H+Z4u1QiHNO/DVfOh8hdJWYT42LLx+NHN9XtlSoVxrL8tpGjheILFTqFmvU7txO6RaKZT5Jz+ir9xeiWSl8M9nBpnayunVqzYKh9eniXNTl8vpVvbhFwOP74nDadFG4RdGmbeXdriibqPwG2budqKnQofXQHgqjIfOhlNfhX1nX958FcaZq53ordDZOXRvhVNXX8DtF87TNP3EDLlyNZpaLlwOxkWSJIWYXX20q4vIrRY+jat/S4tCVmPjBWXuDkSLhave2V02ojDeBxAfHK1n2CvcZs1vYhcXQJxZOhpqrBWqvofpr7fSPOE3F84vTgKcXvze9AxHvy9sFY6U40Zleo6jMxmWChfqHWK8n8PRdGGpULe4lBiWqHZdKtzqRg3TkxwtudkpfNbN3tKwSNWpQu0hJQyrVF0q3GgHftPNcV0qXOp/sBdhFBou6jcMpl0qNNxrmlz8XUMnC/fBFw7067uGG40ptITCGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwlqAhc1/4NHfx2Qq9H7lXhT1dNaNf1HqDc/djt4YrroXa+3rtx1Wb4PWlQfq/zPrWy8PAAAAAAAAAAAAAAAAAAAA4D/0F5lQSZ+5G/qbAAAAAElFTkSuQmCC"height ="20px"width="20px"></a> </li>
+
+    </ul></section>
+    <hr/>
+    <footer><p>Thank you &#10084;</p></footer>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
