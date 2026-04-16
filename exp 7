@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Sales Entry</h3>
+
+<form onsubmit="addSales(); return false;">
+    Enter Gross Sales: 
+    <input type="number" id="sales" required>
+    <button type="submit">Add</button>
+</form>
+
+<button onclick="showResult()">Show Result</button>
+
+<p id="output"></p>
+
+<script>
+let count = [0,0,0,0,0,0,0,0,0]; // 9 salary ranges
+
+function addSales() {
+    let sales = document.getElementById("sales").value;
+
+    let salary = Math.floor(200 + 0.09 * sales);
+
+    let index;
+
+    if (salary >= 1000) {
+        index = 8;
+    } else {
+        index = Math.floor(salary / 100) - 2;
+    }
+
+    count[index]++;
+
+    document.getElementById("sales").value = "";
+}
+
+function showResult() {
+    let ranges = [
+        "200-299", "300-399", "400-499",
+        "500-599", "600-699", "700-799",
+        "800-899", "900-999", "1000+"
+    ];
+
+    let result = "";
+
+    for (let i = 0; i < count.length; i++) {
+        result += ranges[i] + " : " + count[i] + "<br>";
+    }
+
+    document.getElementById("output").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
